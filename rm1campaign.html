@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM1 Campaign Program</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <section id="title">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="">RM1 Campaign</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contributorForm">Contribute Today</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-info">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </section>
+    <div>
+        <img class="col-lg-6" src="images/IIUM_Logo_.svg" alt="IIUM Logo">
+    </div>
+    <div class="program-info">
+        <p><strong> Let your contributions be perpetual for the pleasure of Allah swt</strong></p>
+        <p><em>"The example of those who spend their wealth in the cause of Allah is that of a grain that sprouts into
+                seven ears, each bearing one hundred grains. And Allah multiplies ˹the reward even more˺ to whoever He
+                wills. For Allah is All-Bountiful, All-Knowing."</em></>
+        </p>
+        <p>Al-Baqarah:261</p>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/charity.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/charity2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/charity3.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div>
+        <form id="contributorForm">
+            <label for="contributorName">Name:</label>
+            <input type="text" name="contributorName" id="contributorName">
+
+            <label for="StaffNo">Staff No:</label>
+            <input type="text" name="StaffNo" id="StaffNo">
+
+            <label for="KCDIO">K/C/D/I/O</label>
+            <input type="text" name="KCDIO" id="KCDIO">
+
+            <label for="contributorContact">Contact No:</label>
+            <input type="text" name="contributorContact" id="contributorContact">
+
+            <label for="contributorEmail">Email:</label>
+            <input type="text" name="contributorEmail" id="contributorEmail">
+
+            <label for="contributionAmount">Contribution Amount (RM):</label>
+            <input type="number" id="contributionAmount" name="contributionAmount" required>
+
+            <label>Payment Frequency:</label>
+            <div class="form-radio-group">
+                <label id="monthlytext" for="monthly">Monthly</label>
+                <input type="radio" id="monthly" name="frequency" value="monthly" checked>
+
+                <label id="yearlytext" for="yearly">Yearly</label>
+                <input type="radio" id="yearly" name="frequency" value="yearly">
+            </div>
+
+            <button id="submit" type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <div id="contact-info">
+        <h2>IIUM Endowment Fund Contact Information</h2>
+        <p>Level 3, Muhammad Abdul-Rauf Building, International Islamic University Malaysia, Jalan Gombak, 53100 Gombak,
+            Selangor</p>
+        <p>Email: <a href="mailto:ief@iium.edu.my">ief@iium.edu.my</a></p>
+        <p>Phone: <a href="tel:+60364214133">03-64214133/3211</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
